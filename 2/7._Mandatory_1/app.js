@@ -4,7 +4,7 @@ const app = express();
 app.use(express.static('public'));
 
 
-// Todo serve the welcome page on root
+
 console.log(__dirname)
 app.get("/", (req, res) =>{ 
     res.sendFile(__dirname + "/public/index.html");     // __dirname exists in Node.js // dirname er en global variabel, res.sendFile is a method in Express
@@ -12,9 +12,53 @@ app.get("/", (req, res) =>{
 
 console.log(__dirname)
 app.get("/nodejs", (req, res) =>{ 
-    res.sendFile(__dirname + "/public/views/nodejs.html");     // __dirname exists in Node.js // dirname er en global variabel, res.sendFile is a method in Express
+    res.sendFile(__dirname + "/public/views/nodejs.html"); 
 })
 
+console.log(__dirname)
+app.get("/restAPI", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/restAPI.html");     
+})
+
+console.log(__dirname)
+app.get("/createServer", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/createServer.html");     
+})
+
+console.log(__dirname)
+app.get("/gitHub", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/gitHub.html");     
+})
+
+console.log(__dirname)
+app.get("/scopes", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/scopes.html");  
+})
+
+console.log(__dirname)
+app.get("/visualStudioCode", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/visualStudioCode.html");  
+})
+
+console.log(__dirname)
+app.get("/variables", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/variables.html");  
+})
+
+console.log(__dirname)
+app.get("/functions", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/functions.html");  
+})
+
+console.log(__dirname)
+app.get("/expresss", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/expresss.html");  
+})
+
+console.log(__dirname)
+app.get("/datatyper", (req, res) =>{ 
+    res.sendFile(__dirname + "/public/views/datatyper.html");  
+})
 
 
 
