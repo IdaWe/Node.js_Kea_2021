@@ -40,10 +40,6 @@ app.get("/visualStudioCode", (req, res) =>{
     res.sendFile(__dirname + "/public/views/visualStudioCode.html");  
 })
 
-console.log(__dirname)
-app.get("/variables", (req, res) =>{ 
-    res.sendFile(__dirname + "/public/views/variables.html");  
-})
 
 console.log(__dirname)
 app.get("/functions", (req, res) =>{ 
