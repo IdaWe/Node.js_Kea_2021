@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        #pizza-image{
+            margin: 30px;
+            width: 40vw;
+        }
+        body {
+            background-color: pink;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h2>pizza pizza pizza</h2>
+
+    <!-- create a link that when clicked it takes you to the index -->
+    <a href="/">Home</a>
+
+    <img id="pizza-image" src = "https://www.delonghi.com/Global/recipes/multifry/3_pizza_fresca.jpg">
+
+    <!-- After 6 seconds automatically redirect to the front page-->
+    <script>
+        setTimeout(() => {
+            window.location.href = "/";
+
+        }, 6000);
+    </script>
+    <!-- i setTimeout kunne man så skrive window.location.href = /query=I was afraid"; -->
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+// What HTTP methods and in what order do we want to use??
+
+<collection>: anime_names
+
+Hvis vi forestiller os vi har et table anime_names med fx id, name og ranking
+    - så vi ville bruge et object til at repræsentere hver row - så hver row er et object
+
+Husk: når vi arbejder med json vil vi gerne sende json tilbage
+    - vi sender altid objcter tilbage
+
+
+endpoints:
+
+GET /anime_names    // It respons with all the names (respons når man snakker client/server model)
+GET /anime_names/id    // Respons with a name by id
+    - Hvad kaldes /:id
+       -> Kaldes for path variable
+
+
+POST /anime_names    // Creates a new entry/ressource in the table
+                         - Det giver ikke mening når vi creater en ny row i table at lade clienten 
+                           selv bestemme id, så det gør vi serverside
+
+
+PUT /anime_names    // Updates/replaces the entire ressource 
+
+
+PATCH /anime_names/id    // Updates/replaces part of an entity/ressource
+
+
+DELETE /anime_names/id    // Deletes a specific entity by id

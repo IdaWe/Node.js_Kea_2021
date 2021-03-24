@@ -1,0 +1,12 @@
+	
+                      Endpoint	                     Endpoint
+
+HTTP Method	          /users	                     /users/id
+------------------------------------------------------------------------
+GET	                  Get all ferrets	             Get ferret by id
+
+POST	              Create ferret/ferrets	
+
+PUT/PATCH		                                     Update ferret by id
+
+DELETE		                                         Delete ferret by id
