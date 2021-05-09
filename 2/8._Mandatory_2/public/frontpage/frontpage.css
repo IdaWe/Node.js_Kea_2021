@@ -1,0 +1,19 @@
+.background1{
+    background: rgb(245, 245, 245);
+     
+}
+
+.bottom-of-page{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-image: linear-gradient(to right,rgb(46, 31, 33), rgb(90, 35, 134), rgb(46, 31, 33));
+    margin: 0%;
+}
+
+
+.background2{
+    background: rgb(153, 58, 58);
+     
+}
