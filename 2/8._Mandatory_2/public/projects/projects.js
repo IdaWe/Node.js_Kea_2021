@@ -15,7 +15,11 @@
             card.classList.add("card", "mx-auto", "my-2");
             card.style="width: 18rem;"
 
-            const cardBody = document.createElement("div");
+            const cardPicture = document.createElement("div");
+            card.classList.add("cardPicture");
+            card.style="width: 18rem;"
+
+            const cardBody = document.createElement("div");     
             cardBody.classList.add("card-body");
 
             const cardTitle = document.createElement("h5");
@@ -26,15 +30,30 @@
             cardText.classList.add("card-text");
             cardText.innerText = project.description;
 
+            const cardStartDate = document.createElement("p");
+            cardStartDate.classList.add("card-startDate");
+            cardStartDate.innerText = project.startDate;
 
-    
+            const cardSlutDate = document.createElement("p");
+            cardSlutDate.classList.add("card-endDate");
+            cardSlutDate.innerText = project.endDate;
+
+            const gitLink = document.createElement("p");
+            gitLink.classList.add("card-gitLink");
+            gitLink.innerText = project.gitLink;
 
             projectDiv.appendChild(card);
+            projectDiv.appendChild(cardPicture);
             card.appendChild(cardBody);
             cardBody.appendChild(cardTitle);
             cardBody.appendChild(cardText);
+            cardBody.appendChild(cardStartDate);
+            cardBody.appendChild(cardSlutDate);
+            cardBody.appendChild(gitLink);
 
             projectList.appendChild(projectDiv);
+
+
             
         });
 
@@ -43,49 +62,6 @@
                 console.log(error);
             }
         })();
-            /*
-            const titleHeader = document.createElement("h2");
-            titleHeader.classList.add("project-title");
-            titleHeader.innerText = project.title;
-
-            const descriptionP = document.createElement("p");
-            descriptionP.classList.add("project-description");
-            descriptionP.innerText = project.description;
-
-            const startDateP = document.createElement("p");
-            startDateP.classList.add("project-startDate");
-            startDateP.innerText = project.startDate;
-
-            const endDateP = document.createElement("p");
-            endDateP.classList.add("project-endDate");
-            endDateP.innerText = project.endDate;
-
-            const gitLinkP = document.createElement("a");
-            gitLinkP.classList.add("project-gitLink");
-            gitLinkP.innerText = project.gitLink;
-*/
-            
-
-
-
-            /*
-            projectDiv.appendChild(titleHeader);
-            projectDiv.appendChild(descriptionP);
-            projectDiv.appendChild(startDateP);
-            projectDiv.appendChild(endDateP);
-            projectDiv.appendChild(gitLinkP);
-*/
-
-
-        
-
-
-        /* 
-        show the result on the page...  
-        do it in a scalable way that works even if you add new projects 
-        */
-
-
 
 
 // fetch("/api/projects").then(res => res.json()).then(console.log);

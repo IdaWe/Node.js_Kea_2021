@@ -21,14 +21,17 @@ const projects = [{
     description: "Personal portfolio implemented in Node.js",
     startDate: "Start dato: " + new Date("2021-04-08").toDateString(),
     endDate: "Slut dato: " + new Date("2021-04-15").toDateString(),
-    gitLink: href="https://github.com/anderslatif/Kea_DAT_Node_2021_SPRING.git/2/5._Nodefolio"
+    gitLink: href="https://github.com/IdaWe/Node.js_Kea_2021/tree/main/2/8._Mandatory_2",
+    cardPicture: src="/projects/img/portfolio1.png"
 },{
-    title: "Portfolio",
-    description: "Personal portfolio implemented in Node.js",
-    startDate: "Start dato: " + new Date("2021-04-08").toDateString(),
+    title: "Projekt 2",
+    description: "Projekt prokjekt",
+    startDate: "Start dato: " + new Date("2021-12-08").toDateString(),
     endDate: "Slut dato: " + new Date("2021-04-15").toDateString(),
-    gitLink: href="https://github.com/anderslatif/Kea_DAT_Node_2021_SPRING.git/2/5._Nodefolio"
-}];
+    gitLink: href="https://github.com/blabla/3/_34",
+    cardPicture: src="/frontpage/img/Azmo.jpg"
+}]
+
 router.get("/api/projects", (req, res) => {
     res.send({ projects });
 });
